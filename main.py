@@ -41,11 +41,11 @@ async def help_method(update:Update,context:ContextTypes.DEFAULT_TYPE):
 async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     key_button=[
         [
-        InlineKeyboardButton("burger (10$)",callback_data="add burger 🍔"),
-        InlineKeyboardButton("fries (5$)",callback_data="add fries 🍟"),
+        InlineKeyboardButton("burger (10$)",callback_data="add burger"),
+        InlineKeyboardButton("fries (5$)",callback_data="add fries"),
         ],
         [
-            InlineKeyboardButton("Drinks (3)",callback_data="add drinks 🥂"),
+            InlineKeyboardButton("Drinks (3)",callback_data="add drinks"),
         ]
     ]
     reply_markup=InlineKeyboardMarkup(key_button)
